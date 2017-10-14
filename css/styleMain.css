@@ -1,0 +1,124 @@
+body {
+  background-color: #fff;
+  margin: 0;
+
+  font-size: 1.5em;
+  font-family: monospace;
+}
+
+#header {
+ position: relative;
+ top: 0;
+
+ margin: auto;
+
+ width: 800px;
+ height: 90px;
+
+}
+
+.box {
+  height: calc(100% - 12px);
+  width: calc(100% / 7);
+  min-width: 78px;
+
+  margin: 6px;
+
+  display: inline-block;
+  float: right;
+
+  background-color: #fcc;
+
+  z-index: 1;
+  position: relative;
+
+  border-radius: 48px;
+
+  text-align: center;
+  padding: 0px;
+  vertical-align: middle;
+
+  font-size: 1.25em;
+
+  /*shadow*/
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 -2px 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 -2px 10px rgba(0,0,0,0.6);
+  -o-box-shadow: 0 -2px 10px rgba(0,0,0,0.6);
+}
+
+#logo {
+  width: calc(78px * 2);
+  /*margin-bottom: calc(100vh - 78px - 12px);*/
+
+  float: left;
+
+  background-color: #fec;
+}
+
+#body {
+  position: relative;
+  top: -20px;
+
+  margin: auto;
+
+  width: 800px;
+  height: calc(100vh - 260px);
+
+  text-align: center;
+  vertical-align: middle;
+}
+
+#page0 {
+  position: absolute;
+  top: 0;
+
+  width: calc(100% - 12px);  /*12px is margin*/
+  height: calc(100%);  /*0px is border*/
+
+  margin: 0 6px 0 6px;
+
+  background-color: #def;
+
+  /*shadow*/
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  -o-box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+
+  border-radius: 48px;
+
+  /*border: solid black 2px;*/
+}
+
+#footer {
+  position: relative;
+  top: -20px;
+
+  margin: auto;
+
+  width: 800px;
+  height: 140px;
+}
+
+#footerBox {
+  position: absolute;
+
+  top: 10px;
+
+  width: 100%;
+  background-color: #efd;
+
+  border-radius: 128px;
+
+  height: 140px;
+
+  text-align: center;
+  vertical-align: middle;
+
+  /*shadow*/
+  box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+  -o-box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
