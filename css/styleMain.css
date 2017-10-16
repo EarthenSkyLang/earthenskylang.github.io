@@ -163,15 +163,90 @@ body {
 }
 
 #levelBox {
-  width: calc(100% / 6);
-  height: 100%;
+  width: 130px;
+  height: 130px;
 
-  background-color: yellow;
+  left: calc(100% / 6);
+
+  background-color: #f8a;
+
+  border-radius: 128px;
 }
 
 #xpBox {
-  width: calc(100% / 6);
-  background-color: blue;
+  width: 130px;
+  height: 130px;
+
+  left: calc((100% / 6) * 2);
+
+  background-color: #0f0;
+
+  border-radius: 128px;
+}
+
+#progressBox {
+  width: 260px;
+  height: 130px;
+
+  left: calc((100% / 6) * 3.5);
+
+  background-color: orange;
+
+  border-radius: 256px;
+}
+
+#settingsBox {
+  width: 130px;
+  height: 130px;
+
+  left: calc((100% / 6) * 5);
+
+  background-color: #f44;
+
+  border-radius: 128px;
+}
+
+.footerCircle {
+  position: relative;
+  top: 10%;
+  left: 10%;
+
+  width: 80%;
+  height: 80%;
+
+  background-color: #ffa;
+
+  /*shadow*/
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  -o-box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+
+  border-radius: 128px;
+
+  cursor: pointer;
+}
+
+.footerCircle:hover {
+  background-color: #ff9;
+
+  /*shadow*/
+  box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+  -o-box-shadow: 0 4px 20px rgba(0,0,0,0.6);
+}
+
+.footerCircle:active {
+  background-color: #ff8;
+
+  /*shadow*/
+  box-shadow: 0 1px 5px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.6);
+  -o-box-shadow: 0 1px 5px rgba(0,0,0,0.6);
+
+  border-radius: 64px;
 }
 
 /*standard classes*/
