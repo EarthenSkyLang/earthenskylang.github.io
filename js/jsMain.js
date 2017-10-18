@@ -3,6 +3,7 @@ var currentLevel = 0;
 
 function start() {
   console.log("hi, よ!");
+
 }
 
 document.addEventListener('keydown', function(event) {
