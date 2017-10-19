@@ -13,7 +13,12 @@ function getRomanji(en) {
   return words[en + "*"];
 }
 
+function getDesc(en) {
+  return words[en + "^"];
+}
+
 var words = {
   "book": "本",
   "book*": "hon",
+  "book^": "",
 }

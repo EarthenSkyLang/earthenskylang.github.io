@@ -130,6 +130,69 @@ body {
   /*border: solid black 2px;*/
 }
 
+#page1 {
+  width: calc(100% - 12px);  /*12px is margin*/
+  height: calc(100%);  /*0px is border*/
+
+  margin: 0 6px 0 6px;
+
+  background-color: #dee;
+
+  /*shadow*/
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  -o-box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+
+  border-radius: 48px;
+
+  /*border: solid black 2px;*/
+}
+
+#page2 {
+  position: absolute;
+  top: 0;
+
+  width: calc(100% - 12px);  /*12px is margin*/
+  height: calc(100%);  /*0px is border*/
+
+  margin: 0 6px 0 6px;
+
+  background-color: #cef;
+
+  /*shadow*/
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  -o-box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+
+  border-radius: 48px;
+
+  /*border: solid black 2px;*/
+}
+
+#lessonPage1 {
+  position: absolute;
+  top: 0;
+
+  width: calc(100% - 12px);  /*12px is margin*/
+  height: calc(100%);  /*0px is border*/
+
+  margin: 0 6px 0 6px;
+
+  background-color: #ddf;
+
+  /*shadow*/
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  -webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  -o-box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+
+  border-radius: 48px;
+
+  /*border: solid black 2px;*/
+}
+
 #footer {
   position: relative;
   top: -20px;

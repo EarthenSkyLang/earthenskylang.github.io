@@ -8,13 +8,13 @@
     <script src="http://www.google.com/jsapi?key=AIzaSyA5m1Nc8ws2BbmPRwKu5gFradvD_hgq6G0" type="text/javascript"></script>
   </head>
 
-  <body onload="start()">
+  <body onload="start()" ontouchstart="">
 
     <div id="header">
-      <div class="box unselectable" id="logo" style="font-size: 1.75em; border-radius: 24px;"><p style="margin: 14px 0 0 0;">SkyLang</p></div>
+      <div onclick="main()" class="box unselectable" id="logo" style="font-size: 1.75em; border-radius: 24px;"><p style="margin: 14px 0 0 0;">SkyLang</p></div>
 
-      <div class="box unselectable"><p class="centeredText">Practice</p></div>
-      <div class="box unselectable"><p class="centeredText">Learn</p></div>
+      <div onclick="page1()" class="box unselectable"><p class="centeredText">Practice</p></div>
+      <div onclick="page2()" class="box unselectable"><p class="centeredText">Learn</p></div>
       <div class="box unselectable"><p class="centeredText">List</p></div>
       <div class="box unselectable"><p class="centeredText">Language</p></div>
       <div class="box unselectable"><p class="centeredText">UMM</p></div>
@@ -25,11 +25,25 @@
         <h3>Earthen Sky Language -> skyLang</h3>
         <p>This is a resource to help learn the words for objects you see every day in other languages (^ w ^)</p>
         <p>Its not ready yet...</p>
-
       </div>
 
       <div id="page1" style="visibility: hidden;">
-        <h3>pg2, よ!</h3>
+        <h3 style="padding-top: 18px; margin-bottom: 6px;">Choose a lesson to learn よ!: </h3>
+        <p style="color: #555;">*It's best to have a general understaning of japanese grammar before doing any of these courses in order to get the most out of them.   (^ w ^)</p>
+        <ul>
+          <li onclick="lessonPage1()">Houses</li>
+        </ul>
+      </div>
+
+      <div id="page2" style="visibility: hidden;">
+        <h3>Choose a lesson to practice よ!: </h3>
+        <ul>
+          <li>Houses</li>
+        </ul>
+      </div>
+
+      <div id="lessonPage1" style="visibility: hidden;">
+        <h3>Lesson Number 1, 家!  <em>(house)</em></h3>
       </div>
 
     </div>
@@ -60,6 +74,7 @@
     </div>
 
     <script type="text/javascript" src="js/jsMain.js"></script>
+    <script type="text/javascript" src="js/pages.js"></script>
     <!-- Ad goes here -->
   </body>
 
