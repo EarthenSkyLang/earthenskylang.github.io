@@ -40,11 +40,20 @@ function newPage() {
     pg2.style.visibility = "hidden";
     lesson1.style.visibility = "hidden";
   }
+  else if(location.hash === "#learn" && location.hash !== currentLocation) {
+    currentLocation = location.hash;
+    pg0.style.visibility = "hidden";
+    pg1.style.visibility = "hidden";
+    pg2.style.visibility = "visible";
+    lesson1.style.visibility = "hidden";
+  }
   else if(location.hash === "#lessonHouse" && location.hash !== currentLocation) {
     currentLocation = location.hash;
     pg0.style.visibility = "hidden";
     pg1.style.visibility = "hidden";
     pg2.style.visibility = "hidden";
     lesson1.style.visibility = "visible";
+
+    lesson1Init();
   }
 }

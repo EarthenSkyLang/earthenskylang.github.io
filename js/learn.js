@@ -1,0 +1,2 @@
+var inputElement;
+var textElement;
