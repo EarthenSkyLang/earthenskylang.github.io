@@ -16,8 +16,6 @@ function lessonStart() {
 
   currentWord = 0;
 
-  console.log(getHouseWord("book").kana);
-
   teachWord(currentWord);
 }
 
@@ -25,8 +23,21 @@ var wordsList;
 function teachWord(index) {
   textElement.innerHTML = wordsList[index] + " -> " + getHouseWord(wordsList[index]).kana + " -> " + getHouseWord(wordsList[index]).romanji + "</br>" + getHouseWord(wordsList[index]).desc;
   nextElement.style.visibility = "visible";
+  nextElement.onclick = repeatWord(currentWord);
 }
 
 function repeatWord(index) {
+  textElement.innerHTML = wordsList[index] + " -> " + getHouseWord(wordsList[index]).kana + " -> " + getHouseWord(wordsList[index]).romanji + "</br>" + getHouseWord(wordsList[index]).desc;
+  nextElement.style.visibility = "visible";
+
+  if(checkCorrectAnswer(++currentWord) === true) {
+    teachWord(++currentWord);
+  }
+  else {
+    repeatWord(++currentWord);
+  }
+}
+
+function checkCorrectAnswer() {
 
 }
