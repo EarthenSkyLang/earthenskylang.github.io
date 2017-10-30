@@ -20,24 +20,35 @@ function lessonStart() {
 }
 
 var wordsList;
-function teachWord(index) {
-  textElement.innerHTML = wordsList[index] + " -> " + getHouseWord(wordsList[index]).kana + " -> " + getHouseWord(wordsList[index]).romanji + "</br>" + getHouseWord(wordsList[index]).desc;
+function teachWord() {
+  textElement.innerHTML = wordsList[currentWord] + " -> " + getHouseWord(wordsList[currentWord]).kana + " -> " + getHouseWord(wordsList[currentWord]).romanji + "</br>" + getHouseWord(wordsList[currentWord]).desc;
+
+  inputElement.style.visibility = "hidden";
   nextElement.style.visibility = "visible";
-  nextElement.onclick = repeatWord(currentWord);
+
+  nextElement.onclick = repeatWord;
 }
 
-function repeatWord(index) {
-  textElement.innerHTML = wordsList[index] + " -> " + getHouseWord(wordsList[index]).kana + " -> " + getHouseWord(wordsList[index]).romanji + "</br>" + getHouseWord(wordsList[index]).desc;
-  nextElement.style.visibility = "visible";
+function repeatWord() {
+  inputElement.getElementsByClassName("img1")[0].src = getHouseWord(wordsList[currentWord]).link;
+  inputElement.getElementsByClassName("img1Text")[0].innerHTML = wordsList[currentWord];
 
-  if(checkCorrectAnswer(++currentWord) === true) {
-    teachWord(++currentWord);
-  }
-  else {
-    repeatWord(++currentWord);
-  }
+  textElement.innerHTML = "What is " + getHouseWord(wordsList[currentWord]).kana + " (" + getHouseWord(wordsList[currentWord]).romanji + ") in english."
+
+  inputElement.style.visibility = "visible";
+  nextElement.style.visibility = "hidden";
+
+  inputElement.onclick = checkCorrectAnswer;
 }
 
 function checkCorrectAnswer() {
+  var answerCorrect = false;
 
+  if(answerCorrect === true) {
+    currentWord++;
+    teachWord();
+  }
+  else {
+    repeatWord();
+  }
 }

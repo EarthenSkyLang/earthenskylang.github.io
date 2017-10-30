@@ -343,6 +343,14 @@ green {
   border-radius: 64px;
 }
 
+.img1 {
+  width: 60%;
+}
+
+.img1Text {
+  transform: translate(0, -300%);
+}
+
 /*standard classes*/
 .unselectable {
   -webkit-user-select: none; /* Safari */

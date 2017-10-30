@@ -58,60 +58,70 @@ var houseWords = {
     kana: "本",
     romanji:"hon",
     desc: "<b>Words 本 is included in:</b> <br/> 本だな -> (ho-n-da-na) -> book. <br/><br/> <b>Other uses:</b> <br/> counting blades of grass or tree trunks, <br/> counting falcons. <br/> <pronounced mo-to> <br/><br/> counting long cylyndrical objects, <br/> counting films. <br/> <pronounced ho-n>",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "floor": {
     kana: "ゆか",
     romanji:"yu-ka",
     desc: "means floor",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "table": {
     kana: "",
     romanji:"",
     desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "chair": {
     kana: "",
     romanji:"",
     desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "cup": {
     kana: "",
     romanji:"",
     desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "stool": {
     kana: "",
     romanji:"",
     desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "door": {
     kana: "",
     romanji:"",
     desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "window": {
     kana: "",
-    romanji:"ma-do",
-    desc: "means window",
+    romanji:"",
+    desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "lamp": {
     kana: "",
     romanji:"",
     desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "computer": {
     kana: "",
     romanji:"",
     desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "bookshelf": {
@@ -124,11 +134,12 @@ var houseWords = {
     kana: "",
     romanji:"",
     desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "bed": {
     kana: "",
-    romanji:"",
+    romanji:"be-d-do",
     desc: "",
     understanding: 0
   },
@@ -136,66 +147,77 @@ var houseWords = {
     kana: "",
     romanji:"",
     desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "towel": {
     kana: "",
     romanji:"",
     desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "wall": {
     kana: "",
     romanji:"",
     desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "house": {
     kana: "",
     romanji:"",
     desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "room": {
     kana: "",
     romanji:"",
     desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "hallway": {
     kana: "",
     romanji:"",
     desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "stairs": {
     kana: "",
     romanji:"",
     desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "railing": {
     kana: "",
     romanji:"",
     desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "bin": {
     kana: "",
-    romanji:"bin",
+    romanji:"",
     desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "closet": {
     kana: "",
     romanji:"",
     desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "basket": {
     kana: "",
     romanji:"",
     desc: "",
+    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "blanket": {
