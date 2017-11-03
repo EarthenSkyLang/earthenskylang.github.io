@@ -29,6 +29,8 @@ function teachWord() {
   nextElement.onclick = repeatWord;
 }
 
+//this didnt build for some reason
+
 var pictureWord;
 function repeatWord() {
   //load 4 random pictures (make sure no duplicates)
