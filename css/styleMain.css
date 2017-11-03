@@ -344,11 +344,39 @@ green {
 }
 
 .img1 {
-  width: 60%;
+  width: 40%;
 }
 
 .img1Text {
   transform: translate(0, -300%);
+  margin: 6px;
+}
+
+.img2 {
+  width: 40%;
+}
+
+.img2Text {
+  transform: translate(0, -300%);
+  margin: 6px;
+}
+
+.img3 {
+  width: 40%;
+}
+
+.img3Text {
+  transform: translate(0, -300%);
+  margin: 6px;
+}
+
+.img4 {
+  width: 40%;
+}
+
+.img4Text {
+  transform: translate(0, -300%);
+  margin: 6px;
 }
 
 /*standard classes*/
