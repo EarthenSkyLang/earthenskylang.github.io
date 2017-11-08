@@ -62,16 +62,16 @@ function repeatWord() {
     wordPic4 = currentWord;
   }
 
-  inputElement.getElementsByClassName("img1")[0].src = getHouseWord(wordsList[wordPic1]).link;
+  inputElement.getElementsByClassName("img1")[0].src = "resources/pictures/" + wordsList[wordPic1] + ".jpg";
   inputElement.getElementsByClassName("img1Text")[0].innerHTML = wordsList[wordPic1];
 
-  inputElement.getElementsByClassName("img2")[0].src = getHouseWord(wordsList[wordPic2]).link;
+  inputElement.getElementsByClassName("img2")[0].src = "resources/pictures/" + wordsList[wordPic2] + ".jpg";
   inputElement.getElementsByClassName("img2Text")[0].innerHTML = wordsList[wordPic2];
 
-  inputElement.getElementsByClassName("img3")[0].src = getHouseWord(wordsList[wordPic3]).link;
+  inputElement.getElementsByClassName("img3")[0].src = "resources/pictures/" + wordsList[wordPic3] + ".jpg";
   inputElement.getElementsByClassName("img3Text")[0].innerHTML = wordsList[wordPic3];
 
-  inputElement.getElementsByClassName("img4")[0].src = getHouseWord(wordsList[wordPic4]).link;
+  inputElement.getElementsByClassName("img4")[0].src = "resources/pictures/" + wordsList[wordPic4] + ".jpg";
   inputElement.getElementsByClassName("img4Text")[0].innerHTML = wordsList[wordPic4];
 
   textElement.innerHTML = "What is " + getHouseWord(wordsList[currentWord]).kana + " (" + getHouseWord(wordsList[currentWord]).romanji + ") in english."

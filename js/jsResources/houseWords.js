@@ -58,47 +58,47 @@ var houseWords = {
     kana: "本",
     romanji:"hon",
     desc: "<b>Words 本 is included in:</b> <br/> 本だな -> (ho-n-da-na) -> book. <br/><br/> <b>Other uses:</b> <br/> counting blades of grass or tree trunks, <br/> counting falcons. <br/> <pronounced mo-to> <br/><br/> counting long cylyndrical objects, <br/> counting films. <br/> <pronounced ho-n>",
-    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
+    link: "resources/pictures/book.jpg",
     understanding: 0
   },
   "floor": {
     kana: "ゆか",
     romanji:"yu-ka",
     desc: "means floor",
-    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
+    link: "resources/pictures/floor.jpg",
     understanding: 0
   },
   "table": {
     kana: "",
-    romanji:"",
+    romanji:"te-e-bu-ru",
     desc: "",
-    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
+    link: "resouchairrces/pictures/table.jpg",
     understanding: 0
   },
   "chair": {
     kana: "",
     romanji:"",
     desc: "",
-    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
+    link: "resources/pictures/chair.jpg",
     understanding: 0
   },
   "cup": {
     kana: "",
-    romanji:"",
+    romanji:"ka-p-pu",
     desc: "",
     link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "stool": {
     kana: "",
-    romanji:"",
+    romanji:"su-tsu-ru",
     desc: "",
     link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "door": {
     kana: "",
-    romanji:"",
+    romanji:"do-a",
     desc: "",
     link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
