@@ -343,40 +343,47 @@ green {
   border-radius: 64px;
 }
 
-.img1 {
-  width: 40%;
+.acceptFinish {
+  position: absolute;
+
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  bottom: 2%;
 }
 
-.img1Text {
-  transform: translate(0, -300%);
-  margin: 6px;
+.inputFinish {
+  height: 100%;
 }
 
-.img2 {
-  width: 40%;
+.picture {
+  height: calc(100% - 40px);
+  padding: 20px;
+
+  border-radius: 32px;
+
+  background-color: #fff;
+
+  display: inline-block;
+
+  max-width: 600px;
 }
 
-.img2Text {
-  transform: translate(0, -300%);
-  margin: 6px;
-}
+.pictureText {
+  width: 10%;
+  height: calc(100% - 40px);
+  padding: 20px;
 
-.img3 {
-  width: 40%;
-}
+  position: relative;
+  top: 0px;
 
-.img3Text {
-  transform: translate(0, -300%);
-  margin: 6px;
-}
+  background-color: #fff;
 
-.img4 {
-  width: 40%;
-}
+  border-radius: 32px;
 
-.img4Text {
-  transform: translate(0, -300%);
-  margin: 6px;
+  display: inline-block;
+
+  vertical-align: top;
 }
 
 /*standard classes*/
