@@ -6,6 +6,11 @@ var list;
 
 var currentWord = 0;
 
+function hideElements() {
+  nextElement.style.visibility = "hidden";
+  inputElement.style.visibility = "hidden";
+}
+
 function lessonStart() {
   var toDestroy = document.getElementById("startButton");
   toDestroy.parentNode.removeChild(toDestroy);
@@ -40,15 +45,15 @@ function repeatWord() {
 
   do {
     wordPic2 = getRandomHouseNumber();
-  } while(wordPic2 === currentWord)
+  } while(wordPic2 === currentWord || wordPic2 === wordPic1)
 
   do {
     wordPic3 = getRandomHouseNumber();
-  } while(wordPic3 === currentWord)
+  } while(wordPic3 === currentWord || wordPic3 === wordPic2 || wordPic3 === wordPic1)
 
   do {
     wordPic4 = getRandomHouseNumber();
-  } while(wordPic4 === currentWord)
+  } while(wordPic4 === currentWord || wordPic4 === wordPic3 || wordPic4 === wordPic2 || wordPic4 === wordPic1)
 
   //make one of them correct
   var randomPic = Math.floor((Math.random() * 4));
@@ -86,30 +91,53 @@ function repeatWord() {
 //gives checkCorrectAnswer() the value each thing is associated with.
 var wordPic1 = "";
 function onClickPicture1() {
+  imgNum = 1;
   checkCorrectAnswer(wordPic1);
 }
 
 var wordPic2 = "";
 function onClickPicture2() {
+  imgNum = 2;
   checkCorrectAnswer(wordPic2);
 }
 
 var wordPic3 = "";
 function onClickPicture3() {
+  imgNum = 3;
   checkCorrectAnswer(wordPic3);
 }
 
 var wordPic4 = "";
 function onClickPicture4() {
+  imgNum = 4;
   checkCorrectAnswer(wordPic4);
 }
 
+//sets the background colour of all boxes to white.
+function resetImgColours() {
+  inputElement.getElementsByClassName("img" + 1)[0].style.background = "#fff";
+  inputElement.getElementsByClassName("img" + 2)[0].style.background = "#fff";
+  inputElement.getElementsByClassName("img" + 3)[0].style.background = "#fff";
+  inputElement.getElementsByClassName("img" + 4)[0].style.background = "#fff";
+  checkingAnswer = false;
+}
+
+var imgNum;
+var checkingAnswer = false;
 function checkCorrectAnswer(guessWord) {
-  if(guessWord === currentWord) {
-    currentWord++;
-    teachWord();
-  }
-  else {
-    repeatWord();
+  if(checkingAnswer === false) {
+    checkingAnswer = true;
+
+    if(guessWord === currentWord) {
+      inputElement.getElementsByClassName("img" + imgNum)[0].style.background = "springGreen";
+      currentWord++;
+      setTimeout(teachWord, 1000);
+      setTimeout(resetImgColours, 1000);
+    }
+    else {
+      inputElement.getElementsByClassName("img" + imgNum)[0].style.background = "red";
+      setTimeout(repeatWord, 500);  //if someone got it wrong they need *fast* feedback. (500 < 1000)
+      setTimeout(resetImgColours, 500);
+    }
   }
 }

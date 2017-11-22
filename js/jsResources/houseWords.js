@@ -48,104 +48,97 @@ function getRandomHouseNumber () {
 
 /*holds all the words to learn this lesson*/
 var engHouseWords = [
-  "floor", "book", "table", "chair", "cup", "stool", "door", "window", "lamp", "computer", "bookshelf", "pillow", "bed", "couch",
+  "floor", "book", "table", "chair", "cup", "door", "window", "lamp", "computer", "bookshelf", "pillow", "bed", "couch",
   "towel", "wall", "house", "room", "hallway", "stairs", "railing", "bin", "closet", "basket", "blanket", "shower", "counter", "garbage can"
 ]
 
 //holds word translations and word info.
 var houseWords = {
   "book": {
-    kana: "本",
-    romanji:"hon",
-    desc: "<b>Words 本 is included in:</b> <br/> 本だな -> (ho-n-da-na) -> book. <br/><br/> <b>Other uses:</b> <br/> counting blades of grass or tree trunks, <br/> counting falcons. <br/> <pronounced mo-to> <br/><br/> counting long cylyndrical objects, <br/> counting films. <br/> <pronounced ho-n>",
+    kana: "ほん",
+    romanji: "ho-n",
+    desc: "ほん is 本 in kanji. <br/> 本 is part of grade 1 kanji which is the most commonly used kind. <br/> <br/>  本 is included in: <br/> 本だな -> (ho-n-da-na) -> book. <br/><br/>",
     link: "resources/pictures/book.jpg",
     understanding: 0
   },
   "floor": {
     kana: "ゆか",
     romanji:"yu-ka",
-    desc: "means floor",
+    desc: "*you ca*n see the floor.",
     link: "resources/pictures/floor.jpg",
     understanding: 0
   },
   "table": {
-    kana: "",
+    kana: "テーブル",
     romanji:"te-e-bu-ru",
-    desc: "",
-    link: "resouchairrces/pictures/table.jpg",
+    desc: "it sounds like table. <br/> this is a word in Katakana, which is usually used for english sounding words or materials/ingredients.",
+    link: "resources/pictures/table.jpg",
     understanding: 0
   },
   "chair": {
-    kana: "",
-    romanji:"",
-    desc: "",
+    kana: "いす",
+    romanji:"i-su",
+    desc: "チェア(che-a) is fine too.",
     link: "resources/pictures/chair.jpg",
     understanding: 0
   },
   "cup": {
-    kana: "",
+    kana: "カッパ",
     romanji:"ka-p-pu",
-    desc: "",
-    link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
-    understanding: 0
-  },
-  "stool": {
-    kana: "",
-    romanji:"su-tsu-ru",
-    desc: "",
+    desc: "it sounds like cup.",
     link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "door": {
-    kana: "",
-    romanji:"do-a",
-    desc: "",
+    kana: "と",
+    romanji:"to",
+    desc: "ドア(do-a) is also ok. <br/> とびら(to-bi-ra) is ok too.",
     link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "window": {
-    kana: "",
-    romanji:"",
-    desc: "",
+    kana: "まど",
+    romanji: "ma-do",
+    desc: "ウィンドウ(wi-n-do-u) is fine too.",
     link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "lamp": {
-    kana: "",
-    romanji:"",
-    desc: "",
+    kana: "ランプ",
+    romanji:"ra-n-pu",
+    desc: "あかり(a-ka-ri) and ひかり(hi-ka-ri) both mean *light* but are mostly still fine. <br/> ひかり is a more bright or brilliant light than あかり.",
     link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "computer": {
-    kana: "",
-    romanji:"",
-    desc: "",
+    kana: "パソコン",
+    romanji: "pa-so-ko-n",
+    desc: "(pa-so-ko-n) sounds like *personal computer*",
     link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "bookshelf": {
-    kana: "",
-    romanji:"hon-da-na",
-    desc: "",
+    kana: "ほんだな",
+    romanji:"ho-n-da-na",
+    desc: "has ほん(ho-n) in it which means book.",
     understanding: 0
   },
   "pillow": {
-    kana: "",
-    romanji:"",
-    desc: "",
+    kana: "まくら",
+    romanji: "ma-ku-ra",
+    desc: "まくら is 枕 in kanji. <br/> 枕 Isn't a super common kanji, it's about as common as the kanji for most words in this lesson.",
     link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "bed": {
-    kana: "",
-    romanji:"be-d-do",
-    desc: "",
+    kana: "ベッド",
+    romanji: "be-d-do",
+    desc: "寝台(shi-n-da-i) is another way to say bed.",
     understanding: 0
   },
   "couch": {
     kana: "",
-    romanji:"",
+    romanji: "",
     desc: "",
     link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
@@ -159,21 +152,21 @@ var houseWords = {
   },
   "wall": {
     kana: "",
-    romanji:"",
+    romanji: "ka-be",
     desc: "",
     link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "house": {
     kana: "",
-    romanji:"",
+    romanji: "",
     desc: "",
     link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "room": {
     kana: "",
-    romanji:"",
+    romanji: "",
     desc: "",
     link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0

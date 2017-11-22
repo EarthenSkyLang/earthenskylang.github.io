@@ -19,7 +19,7 @@ function page2 () {
 }
 
 function lessonPage1 () {
-  location.hash = "#lessonHouse";
+  location.hash = "#practiceHouse";
 }
 
 window.onhashchange = newPage;
@@ -31,23 +31,23 @@ function newPage() {
     pg0.style.visibility = "visible";
     pg1.style.visibility = "hidden";
     pg2.style.visibility = "hidden";
-    lesson1.style.visibility = "hidden";
+    lesson1.style.visibility = "hidden"; hideElements();
   }
   else if(location.hash === "#practice" && location.hash !== currentLocation) {
     currentLocation = location.hash;
     pg0.style.visibility = "hidden";
     pg1.style.visibility = "visible";
     pg2.style.visibility = "hidden";
-    lesson1.style.visibility = "hidden";
+    lesson1.style.visibility = "hidden"; hideElements();
   }
   else if(location.hash === "#learn" && location.hash !== currentLocation) {
     currentLocation = location.hash;
     pg0.style.visibility = "hidden";
     pg1.style.visibility = "hidden";
     pg2.style.visibility = "visible";
-    lesson1.style.visibility = "hidden";
+    lesson1.style.visibility = "hidden"; hideElements();
   }
-  else if(location.hash === "#lessonHouse" && location.hash !== currentLocation) {
+  else if(location.hash === "#practiceHouse" && location.hash !== currentLocation) {
     currentLocation = location.hash;
     pg0.style.visibility = "hidden";
     pg1.style.visibility = "hidden";

@@ -386,6 +386,10 @@ green {
   vertical-align: top;
 }
 
+.text {
+  font-size: 1.15em;
+}
+
 /*standard classes*/
 .unselectable {
   -webkit-user-select: none; /* Safari */
