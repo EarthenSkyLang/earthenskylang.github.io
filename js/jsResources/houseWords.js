@@ -126,7 +126,7 @@ var houseWords = {
   "pillow": {
     kana: "まくら",
     romanji: "ma-ku-ra",
-    desc: "まくら is 枕 in kanji. <br/> 枕 Isn't a super common kanji, it's about as common as the kanji for most words in this lesson.",
+    desc: "kanji: <pop2>まくら</pop2> is <pop2>枕</pop2>.",
     link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
@@ -137,23 +137,23 @@ var houseWords = {
     understanding: 0
   },
   "couch": {
-    kana: "",
-    romanji: "",
-    desc: "",
+    kana: "ソファー",
+    romanji: "so-fa-a",
+    desc: "sofa == couch <br><br> ^^",
     link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "towel": {
-    kana: "",
-    romanji:"",
-    desc: "",
+    kana: "タオル",
+    romanji:"ta-o-ru",
+    desc: "タオル(ta-o-ru) sounds like towel.",
     link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },
   "wall": {
-    kana: "",
+    kana: "かべ",
     romanji: "ka-be",
-    desc: "",
+    desc: "kanji: <pop2>かべ</pop2> is <pop2>壁</pop2>.",
     link: "https://cdn.pixabay.com/photo/2017/08/06/03/56/book-2588514_1280.jpg",
     understanding: 0
   },

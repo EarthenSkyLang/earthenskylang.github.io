@@ -370,7 +370,7 @@ green {
 }
 
 .pictureText {
-  width: 10%;
+  width: 15%;
   height: calc(100% - 40px);
   padding: 20px;
 
@@ -388,6 +388,16 @@ green {
 
 .text {
   font-size: 1.15em;
+}
+
+pop {
+  font-weight: bold;
+  color: #f80;
+}
+
+pop2 {
+  font-weight: bold;
+  color: #03f;
 }
 
 /*standard classes*/

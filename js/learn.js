@@ -7,8 +7,10 @@ var list;
 var currentWord = 0;
 
 function hideElements() {
-  nextElement.style.visibility = "hidden";
-  inputElement.style.visibility = "hidden";
+  if(nextElement !== undefined) {
+    nextElement.style.visibility = "hidden";
+    inputElement.style.visibility = "hidden";
+  } else { console.log("elements not yet initialized."); }
 }
 
 function lessonStart() {
@@ -26,7 +28,7 @@ function lessonStart() {
 
 var wordsList;
 function teachWord() {
-  textElement.innerHTML = wordsList[currentWord] + " -> " + getHouseWord(wordsList[currentWord]).kana + " -> " + getHouseWord(wordsList[currentWord]).romanji + "</br>" + getHouseWord(wordsList[currentWord]).desc;
+  textElement.innerHTML = "<pop>" + wordsList[currentWord] + "</pop> is <pop>" + getHouseWord(wordsList[currentWord]).kana + "</pop> in japanese.  Pronnounced (<pop>" + getHouseWord(wordsList[currentWord]).romanji + "</pop>) <br><br>" + getHouseWord(wordsList[currentWord]).desc;
 
   inputElement.style.visibility = "hidden";
   nextElement.style.visibility = "visible";
@@ -131,13 +133,13 @@ function checkCorrectAnswer(guessWord) {
     if(guessWord === currentWord) {
       inputElement.getElementsByClassName("img" + imgNum)[0].style.background = "springGreen";
       currentWord++;
-      setTimeout(teachWord, 1000);
-      setTimeout(resetImgColours, 1000);
+      setTimeout(teachWord, 500);
+      setTimeout(resetImgColours, 500);
     }
     else {
       inputElement.getElementsByClassName("img" + imgNum)[0].style.background = "red";
-      setTimeout(repeatWord, 500);  //if someone got it wrong they need *fast* feedback. (500 < 1000)
-      setTimeout(resetImgColours, 500);
+      setTimeout(repeatWord, 250);  //if someone got it wrong they need *fast* feedback. (500 < 1000)
+      setTimeout(resetImgColours, 250);
     }
   }
 }
